@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Le Signe - Accueil</title>
+  <meta name="description" content="Site Demo LeSigne D'Or et de Platine">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0d2059c859.js" crossorigin="anonymous"></script>
+  <style>
+  .breadcrumb .breadcrumb-item:not(:last-child):after {
+    content: '/';
+  }
+  </style>
+</head>
+
+<body class="bg-gray-900">
+
+  <!-- Menu section -->
+  <div id="menu" class="container fixed max-w-full">
+    <nav class="flex items-center justify-between flex-wrap bg-gray-900 p-6 border-b-4 border-gray-800">
+
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <img class="w-10 mr-4" src="assets/signe.png">
+        <span class="font-semibold text-xl tracking-tight">LeSigne</span>
+      </div>
+
+      <div class="block sm:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="flex-grow justify-between items-center hidden sm:flex lg:items-center lg:w-auto">
+        <div class="flex text-sm lg:flex-grow">
+          <a href="/" class="block mt-auto lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Accueil
+          </a>
+          <a href="/discographie.html"
+            class="block mt-auto lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Discographie
+          </a>
+          <a href="/nouvel-album.html" class="f mt-auto lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+            <strong>Nouvel Album</strong>
+          </a>
+        </div>
+
+        <div>
+          <a href="/store.html"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white lg:mt-0">Boutique</a>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+
+  <!-- Discographie Section -->
+  <div class="container pt-20 flex flex-col max-w-full justify-center items-center text-white">
+
+    <div class="ariane pt-3">
+      <nav aria-label="breadcrumb"> 
+        <ol class="breadcrumb flex">
+          <li class="breadcrumb-item text-gray-600"><a href="/" class="text-gray-600 hover:text-teal-500 mx-2">Acceuil</a></li>
+          <li class="breadcrumb-item active text-teal-500 hover:text-teal-500 mx-2" aria-current="page">Discographie</li> 
+        </ol>
+      </nav>
+    </div>
+
+    <div class="w-full text-white text-center font-black text-6xl p-8">
+      <h1>Discographie</h1>
+    </div>
+
+    <div id="discographie-tableau" class="w-full flex justify-center p-8">
+      <table class="table-fixed">
+        <thead>
+          <tr>
+            <th class="w-1/4 px-4 py-2">Cover</th>
+            <th class="w-1/4 px-4 py-2">Titre</th>
+            <th class="w-1/4 px-4 py-2">Détails</th>
+            <th class="w-1/4 px-4 py-2">Certifications</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="bg-gray-800">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/paranoia.jpg" class="w-32 h-32">
+            </td>
+            <td class="border px-4 py-2">Dans ma paranoïa</td>
+            <td class="border px-4 py-2">Sortie le 24 février 2014</td>
+            <td class="border px-4 py-2"><i class="fas fa-compact-disc text-teal-500"></i> Platine</td>
+          </tr>
+
+          <tr class="bg-gray-700">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/sommeil.jpg" class="w-32 h-32">
+            </td>
+            <td class="border px-4 py-2">Je trouve pas le sommeil</td>
+            <td class="border px-4 py-2">Sortie le 8 décembre 2014</td>
+            <td class="border px-4 py-2">Aucune</td>
+          </tr>
+
+          <tr class="bg-gray-800">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/rond.jpg" class="w-32 h-32"></td>
+            <td class="border px-4 py-2">Je tourne en rond</td>
+            <td class="border px-4 py-2">Sortie le 8 juin 2015</td>
+            <td class="border px-4 py-2">Aucune</td>
+          </tr>
+
+          <tr class="bg-gray-700">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/world.jpg" class="w-32 h-32"></td>
+            <td class="border px-4 py-2">My World</td>
+            <td class="border px-4 py-2">Sortie le 4 décembre 2015</td>
+            <td class="border px-4 py-2"><i class="fas fa-compact-disc text-blue-500"></i> Diamant</td>
+          </tr>
+
+          <tr class="bg-gray-800">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/emotions.jpg" class="w-32 h-32">
+            </td>
+            <td class="border px-4 py-2">Emotions</td>
+            <td class="border px-4 py-2">Sortie le 24 juin 2016</td>
+            <td class="border px-4 py-2">3x <i class="fas fa-compact-disc text-teal-500"></i> Platine</td>
+          </tr>
+
+          <tr class="bg-gray-700">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/ovni.jpg" class="w-32 h-32"></td>
+            <td class="border px-4 py-2">L'Ovni</td>
+            <td class="border px-4 py-2">Sortie le 2 décembre 2016</td>
+            <td class="border px-4 py-2">3x <i class="fas fa-compact-disc text-teal-500"></i> Platine</td>
+          </tr>
+
+          <tr class="bg-gray-800">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/briller.jpg" class="w-32 h-32">
+            </td>
+            <td class="border px-4 py-2">Je ne me vois pas briller</td>
+            <td class="border px-4 py-2">Sortie le 30 juin 2017</td>
+            <td class="border px-4 py-2">2x <i class="fas fa-compact-disc text-teal-500"></i> Platine</td>
+          </tr>
+
+          <tr class="bg-gray-700">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/nuage.jpg" class="w-32 h-32"></td>
+            <td class="border px-4 py-2">La tête dans les nuages</td>
+            <td class="border px-4 py-2">Sortie le 1 décembre 2017</td>
+            <td class="border px-4 py-2">2x <i class="fas fa-compact-disc text-teal-500"></i> Platine</td>
+          </tr>
+
+          <tr class="bg-gray-800">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/inspi.jpg" class="w-32 h-32"></td>
+            <td class="border px-4 py-2">Inspi d'ailleurs</td>
+            <td class="border px-4 py-2">Sortie le 9 juin 2018</td>
+            <td class="border px-4 py-2"><i class="fas fa-compact-disc text-teal-500"></i> Platine</td>
+          </tr>
+
+          <tr class="bg-gray-700">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/zone.jpg" class="w-32 h-32"></td>
+            <td class="border px-4 py-2">La zone en personne</td>
+            <td class="border px-4 py-2">Sortie le 7 décembre 2018</td>
+            <td class="border px-4 py-2"><i class="fas fa-compact-disc text-teal-500"></i> Platine</td>
+          </tr>
+
+          <tr class="bg-gray-800">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/rien.jpg" class="w-32 h-32"></td>
+            <td class="border px-4 py-2">Rien 100 rien</td>
+            <td class="border px-4 py-2">Sortie le 14 juin 2019</td>
+            <td class="border px-4 py-2">2x <i class="fas fa-compact-disc text-teal-500"></i> Platine</td>
+          </tr>
+
+          <tr class="bg-gray-700">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/lol.jpg" class="w-32 h-32"></td>
+            <td class="border px-4 py-2">C'est pas des LOL</td>
+            <td class="border px-4 py-2">Sortie le 16 décembre 2019</td>
+            <td class="border px-4 py-2"><i class="fas fa-compact-disc text-teal-500"></i> Platine</td>
+          </tr>
+
+          <tr class="bg-gray-800">
+            <td class="border px-4 py-2 flex justify-center"><img src="/assets/albums/machine.jpg" class="w-32 h-32">
+            </td>
+            <td class="border px-4 py-2">La Machine</td>
+            <td class="border px-4 py-2">Sortie le 19 juin 2020</td>
+            <td class="border px-4 py-2"><i class="fas fa-compact-disc text-teal-500"></i> Platine</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</body>
+
+<footer>
+  <div class="w-full text-center p-4 bg-black text-white">
+    <p>Copyright LeSigne 2020</p>
+  </div>
+</footer>
+
+</html>
